@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello
+    <script>
+        class Demo{
+            name="rupesh";
+            constructor(a,b){
+
+                console.log("this is js constructor "+this.name);
+                console.log(a+b);
+            }
+            hDemo(){
+                console.log("hello from java script checking45");
+            }
+                    }
+
+        class Demo2 extends Demo{
+           
+            s="sakshi"
+         
+            constructor(){
+                super();
+                console.log("this is child constructor "+this.s)
+                console.log("this is parent in child constructor "+this.name)
+            }
+
+
+            print(){
+                console.log("hello from inheritance class")
+            }
+            
+        }
+       //d=new Demo(2,3);
+     d=new Demo2();
+     d.print();
+     d.hDemo();
+    </script>
+</body>
+</html>
